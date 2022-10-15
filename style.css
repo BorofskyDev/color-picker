@@ -1,18 +1,43 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* .color-container {
     display: flex;
 } */
 
+.container {
+  margin: 0 auto;
+  max-width: 550px;
+  overflow-x: hidden;
+}
+
 .colors-container {
-    display: flex;
-    background: blue
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  padding: 0 3em;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .colors {
-    height: 400px;
-    width: 200px;
+  height: 550px;
+  width: 110px;
+}
+
+.color-codes {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  background-color: #1c1c1c;
+  color: white;
 }

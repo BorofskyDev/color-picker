@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Color Generator</title>
 </head>
+
 <body>
     <main class="container">
         <div class="selector-container">
-        <form action="" id="color-picker">
-            <input type="color" id="color" value="hex">
-            <label for="schemes">Pick a scheme</label>
-            <select name="schemes" id="schemes">
-                <option value="monochrome">Monochrome</option>
-                <option value="monochrome-dark">Monochrome Dark</option>
-                <option value="monochrome-light">Monochrome Light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic Complement</option>
-                <option value="Triad">Triad</option>
-                <option value="Quad">Quad</option>
-            </select>
-            <label for="quantity">How many colors would you like? (2-6)</label>
-            <input type="number" id="quantity" name="quantity" min="2" max="6">
-            <button class="color-btn">Get color scheme</button>
-        </form>
+            <form action="" id="color-picker">
+                <input type="color" id="color" value="hex">
+                <label for="schemes">Pick a scheme</label>
+                <select name="schemes" id="schemes">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome Dark</option>
+                    <option value="monochrome-light">Monochrome Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <label for="quantity">How many colors would you like? (2-6)</label>
+                <input type="number" id="quantity" name="quantity" min="2" max="6">
+                <button class="color-btn">Get color scheme</button>
+            </form>
         </div>
-        
+
         <div id="color-container" class="color-container">
-            <div class="colors-container" id="colors-container"></div>
-            <div class="code-container" id="code-container"></div>
+            <div class="colors-container" id="colors-container">    
+        </div>
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -5,13 +5,18 @@ let colorImg = '';
 
 function renderColors() {
   let colors = '';
-  let codes = ''
+ 
   for (let color of colorsArray) {
-    colors += `<div class="colors" style="background-color:${color.hex.value}"></div>`;
-    codes += `<p  class="color-codes">${color.hex.value}</p>`;
+    colors += `
+        <div class="card">
+            <div class="colors" style="background-color:${color.hex.value}">.</div>
+            <div  class="color-codes">${color.hex.value}</div>
+        </div>`;
+    
+    
   }
   document.getElementById('colors-container').innerHTML = colors;
-  document.getElementById('code-container').innerHTML = codes;
+
 }
 
 colorScheme.addEventListener('submit', (e) => {
