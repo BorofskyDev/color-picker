@@ -9,7 +9,7 @@ function renderColors() {
   for (let color of colorsArray) {
     colors += `
         <div class="card">
-            <div class="colors" style="background-color:${color.hex.value}">.</div>
+            <div class="colors" style="background-color:${color.hex.value}"></div>
             <div  class="color-codes">${color.hex.value}</div>
         </div>`;
     
@@ -37,4 +37,4 @@ colorScheme.addEventListener('submit', (e) => {
     });
 });
 
-// style = 'background-color:${color.hex.value}';
+
